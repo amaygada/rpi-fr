@@ -20,7 +20,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-(0$r3+w2&#lsw9(+thvf)he%5t&+!0o51a5#bzwoowj4=jerev'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -88,17 +87,6 @@ WSGI_APPLICATION = 'fr_api.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'attendance',
-        # 'NAME': 'testmb',
-        'CLIENT': {
-            "host": "mongodb+srv://rpi:Facerecog123@cluster0.npg0h8h.mongodb.net/?retryWrites=true&w=majority"
-        }
-    }
-}
 
 
 # Password validation
