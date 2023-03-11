@@ -4,9 +4,9 @@ import subprocess
 import RPi.GPIO as GPIO
 import os
 
-api = "https://241d-2405-201-17-f0cc-b498-3c83-3820-1a9c.ngrok.io/api/"
+api = "https://0467-2405-201-17-f0cc-149e-7d9d-191f-8435.ngrok.io/api/"
 cmd = "raspistill"
-thresh = 350
+thresh = 6
 
 try :
 
@@ -26,7 +26,8 @@ try :
 
 		while GPIO.input(resistor_pin) == GPIO.LOW:
 			diff = time.time() - ct
-
+		
+		
 		if (diff*1000) > thresh:
 			print("smile in 2 seconds")
 			time.sleep(2)
