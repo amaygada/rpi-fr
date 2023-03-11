@@ -4,7 +4,7 @@ import subprocess
 import RPi.GPIO as GPIO
 import os
 
-api = "https://0467-2405-201-17-f0cc-149e-7d9d-191f-8435.ngrok.io/api/"
+api = "https://4aae-2409-4040-e0c-f977-6196-ee3a-ba75-1577.ngrok.io/api/"
 cmd = "raspistill"
 thresh = 6
 
